@@ -1,13 +1,12 @@
 .slider {
     position: relative;
-    overflow: hidden;
     width: 600px;
     margin: 0 auto; 
   }
   
   .slides {
     display: flex;
-    transition: transform 0.5s ease-in-out;
+    
   }
   
   .slides img {
