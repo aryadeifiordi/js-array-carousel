@@ -1,36 +1,27 @@
 .slider {
-    position: relative;
     width: 600px;
-    margin: 0 auto; 
+    margin: auto;
+    & img {
+      max-width: 100%;
+    }
+
+     .slides{
+
+      >img {
+        max-width: 100%;
+
+      }
+
+      > img:not(.active){
+        display: none;
+      }
+
+     }
+
+     .controls{
+      display: flex;
+      justify-content: space-between;
+     }
   }
   
-  .slides {
-    display: flex;
-    
-  }
-  
-  .slides img {
-    width: 100%;
-    display: block;
-  }
-  
-  .prev-btn,
-  .next-btn {
-    position: absolute;
-    top: 50%;
-    background: transparent;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    font-size: 24px;
-    color: #fff;
-    z-index: 2;
-  }
-  
-  .prev-btn {
-    left: 10px;
-  }
-  
-  .next-btn {
-    right: 10px;
-  }
+ 
