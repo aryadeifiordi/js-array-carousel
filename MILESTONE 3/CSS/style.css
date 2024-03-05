@@ -1,0 +1,40 @@
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.slides {
+    position: relative;
+}
+
+.slides img {
+    max-width: 100%; 
+    display: none; 
+}
+
+.slides img.active {
+    display: block; 
+}
+
+.prev-btn,
+.next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.prev-btn {
+    left: 10px; 
+}
+
+.next-btn {
+    right: 10px; 
+}

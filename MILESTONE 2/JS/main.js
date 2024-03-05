@@ -14,11 +14,11 @@ const slides = [
      imageElement.src = `./img/${slide}`;
      imageElement.alt = `Image ${i + 1}`;
      
-     // Aggiungi la classe "active" solo alla prima immagine
+     // Aggiungo la classe "active" solo alla prima immagine
      if (i === 0) {
          imageElement.classList.add('active');
      } else {
-         // Nascondi le altre immagini
+         // Nascondo le altre immagini
          imageElement.style.display = 'none';
      }
      
@@ -44,10 +44,10 @@ const slides = [
      slides.forEach((slide, index) => {
          if (index === activeIndex) {
              slide.classList.add('active');
-             slide.style.display = 'block'; // Rendi visibile l'immagine attiva
+             slide.style.display = 'block'; 
          } else {
              slide.classList.remove('active');
-             slide.style.display = 'none'; // Nascondi le altre immagini
+             slide.style.display = 'none'; 
          }
      });
  }
